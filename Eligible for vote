@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int no_of_voters, i, age;
+    cout << "Enter how many voters : ";
+    cin >> no_of_voters;
+    for(i = 0; i < no_of_voters; i++)
+    {
+        cout << "Enter the age of user number [" << i + 1 << "] : ";
+        cin >> age;
+        
+        if(age >= 18)
+        cout << "You are eligible for vote\n";
+        else
+        cout << "Sorry, You are not eligible for vote\n";
+    }
+    return 0;
+}
